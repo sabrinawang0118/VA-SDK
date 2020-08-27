@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VA Embed Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script
+      async
+      src="https://unpkg.com/@sassoftware/va-report-components@0.7/dist/umd/va-report-components.js"
+    ></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Sample VA Page</h1>
+      <p>Embed Viya VA Elements into existing HTML</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Object 1</h3>
+          <p>Embed object in a va report</p>
+          <sas-report-object
+            objectName="ve483"
+            authenticationType="guest"
+            url="http://10.96.4.72"
+            reportUri="/reports/reports/15b7fa7c-4bad-4c87-86d4-4e48d6c4c122"
+            style="height: 250px"
+          ></sas-report-object>
+        </div>
+        <div class="col-sm-4">
+          <h3>Object 2</h3>
+          <p>another object</p>
+          <sas-report-object
+            objectName="ve501"
+            authenticationType="guest"
+            url="http://10.96.4.72"
+            reportUri="/reports/reports/15b7fa7c-4bad-4c87-86d4-4e48d6c4c122"
+            style="height: 250px"
+          ></sas-report-object>
+        </div>
+        <div class="col-sm-4">
+          <h3>Object 3</h3>
+          <p>another one</p>
+          <sas-report-object
+            objectName="ve801"
+            authenticationType="guest"
+            url="http://10.96.4.72"
+            reportUri="/reports/reports/15b7fa7c-4bad-4c87-86d4-4e48d6c4c122"
+            style="height: 250px"
+          ></sas-report-object>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>Object 4</h3>
+          <p>interactivity is not lost</p>
+          <sas-report-object
+            objectName="ve440"
+            authenticationType="guest"
+            url="http://10.96.4.72"
+            reportUri="/reports/reports/15b7fa7c-4bad-4c87-86d4-4e48d6c4c122"
+            style="height: 600px"
+          ></sas-report-object>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Object 5</h3>
+          <p>embed maps</p>
+          <sas-report-object
+            objectName="ve271"
+            authenticationType="guest"
+            url="http://10.96.4.72"
+            reportUri="/reports/reports/15b7fa7c-4bad-4c87-86d4-4e48d6c4c122"
+            style="height: 600px"
+          ></sas-report-object>
+        </div>
+        <div class="col-sm-6">
+          <h3>Object 6</h3>
+          <p>containers</p>
+          <sas-report-object
+            objectName="ve506"
+            authenticationType="guest"
+            url="http://10.96.4.72"
+            reportUri="/reports/reports/15b7fa7c-4bad-4c87-86d4-4e48d6c4c122"
+            style="height: 600px"
+          ></sas-report-object>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
